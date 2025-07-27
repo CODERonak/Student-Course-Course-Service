@@ -56,7 +56,7 @@ course-service/
 
 ---
 
-### Endpoints
+## 📚 API Endpoints
 
 | Method   | Endpoint        | Description             |
 | -------- | --------------- | ----------------------- |
@@ -71,22 +71,23 @@ course-service/
 
 This service communicates with:
 
-* 🔗 \[`enrollment-service`]\(coming soon): Validates course IDs during enrollment operations
+* 🔗 `enrollment-service` (coming soon): Validates course IDs during enrollment operations
 
 ---
 
 ## 🔗 Related Microservices
 
-| Service                                  | Description                             | Repository |
-| ---------------------------------------- | --------------------------------------- | ---------- |
-| 🎓 \[`student-service`]\(almost done)    | Manages student profile info            |            |
-| 📘 `course-service`                      | *You are here*                          |            |
-| 🔗 \[`enrollment-service`]\(coming soon) | Student-course enrollment relationships |            |
+| Service                                                                             | Description                             | Repository                                                            |
+| ----------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
+| 🎓 [`student-service`](https://github.com/CODERonak/Student-Course-Student-Service) | Manages student profile info            | [GitHub](https://github.com/CODERonak/Student-Course-Student-Service) |
+| 📘 `course-service`                                                                 | *You are here*                          | –                                                                     |
+| 🔗 `enrollment-service` (coming soon)                                               | Student-course enrollment relationships | –                                                                     |
 
 ---
 
 ## 🧩 Database
 
-Each microservice uses its **own database**. This service connects to **MySQL** with its own schema or instance, maintaining clean separation of concerns and modular deployment.
+Each microservice uses its **own database**.
+This service connects to **MySQL** with its own schema or instance, maintaining clean separation of concerns and modular deployment.
 
 ---

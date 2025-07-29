@@ -29,6 +29,11 @@ public class CourseService {
         return courses.stream().map(mapper::toResponse).toList();
     }
 
+    public CourseResponse getCourseById(Long id) {
+        Course course = courseRepository.findById(id).orElseThrow();
+        return mapper.toResponse(course);
+    }
+
     public void deleteCourse(Long id) {
         courseRepository.deleteById(id);
     }
